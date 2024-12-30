@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Bookstore Frontend
 
-## Getting Started
+Description :
+Ce projet est le frontend de l'application Bookstore, développé avec React et Next.js. Il offre une interface utilisateur intuitive pour gérer les utilisateurs, les livres et les catégories, ainsi que pour consulter et télécharger les fichiers PDF associés.
 
-First, run the development server:
+Fonctionnalités :
+- Inscription et connexion des utilisateurs.
+- Ajout, modification, suppression et consultation des livres.
+- Téléchargement des fichiers PDF associés aux livres.
+- Gestion des catégories avec affichage dynamique.
+- Expérience utilisateur fluide grâce à une interface responsive.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Technologies utilisées :
+- React : Framework pour construire l'interface utilisateur.
+- Next.js : Framework pour le rendu côté serveur et le routage.
+- Tailwind CSS : Framework CSS pour des interfaces modernes.
+- Axios : Bibliothèque pour gérer les appels API.
+- TypeScript : Typage statique pour un code robuste et maintenable.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Installation :
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Prérequis :
+- Node.js installé sur votre machine.
+- Un outil comme Postman ou votre backend déjà en cours d'exécution.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Étapes :
+1. Clonez le dépôt :
+   git clone https://github.com/aywin/Frontend.git
+   cd Frontend
 
-## Learn More
+2. Installez les dépendances :
+   npm install
 
-To learn more about Next.js, take a look at the following resources:
+3. Configurez les variables d'environnement dans un fichier `.env.local` :
+   NEXT_PUBLIC_API_URL=http://localhost:8080/api
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Lancez l'application :
+   npm run dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+5. Accédez à l'application via :
+   http://localhost:3000
 
-## Deploy on Vercel
+Documentation des pages principales :
+- Page d'inscription : Permet aux utilisateurs de créer un compte.
+- Page de connexion : Authentification pour accéder aux fonctionnalités.
+- Page de liste des livres : Affiche tous les livres disponibles.
+- Page d'ajout/modification : Permet de créer ou modifier un livre avec fichier PDF.
+- Page de gestion des catégories : Affiche et modifie les catégories existantes.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Tests :
+Toutes les fonctionnalités ont été testées manuellement avec le backend opérationnel. Les appels API ont été validés pour garantir une intégration correcte.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Auteurs :
+Aymar OUEDRAOGO
